@@ -10,3 +10,9 @@ img{max-width:100%}
 a{color:#B3261E}a:hover{color:#7E1A14}
 button{font:inherit}
 :focus-visible{outline:3px solid #B3261E;outline-offset:3px}
+.ex-grid{grid-template-columns:repeat(4,minmax(0,1fr))}
+.ex-img{aspect-ratio:2/3}
+.ex-name{font-size:18px}
+.ex-task{font-size:15px}
+@media (max-width:1000px){.ex-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:600px){.ex-grid{gap:10px !important}.ex-card{padding:8px !important;gap:10px !important;border-radius:12px !important}.ex-img{aspect-ratio:3/4}.ex-text{padding:0 4px 4px !important}.ex-name{font-size:15px}.ex-task{font-size:13px}}
