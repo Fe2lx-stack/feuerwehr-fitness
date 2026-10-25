@@ -13,4 +13,5 @@ document.getElementById('zoomIn').addEventListener('click',function(){setLvl(lvl
 document.getElementById('zoomOut').addEventListener('click',function(){setLvl(lvl-1)});
 document.addEventListener('keydown',function(e){if(e.key==='Escape'&&!Z.hidden)closeZ();});
 Z.style.display='none';
+var T=document.querySelector('.to-top');if(T){var u=function(){var s=window.scrollY>600;T.style.opacity=s?1:0;T.style.pointerEvents=s?'auto':'none';};window.addEventListener('scroll',u,{passive:true});u();}
 })();
